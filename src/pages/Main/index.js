@@ -1,6 +1,7 @@
 import React from 'react';
 import { View, Button, Text, StyleSheet, FlatList, TouchableOpacity } from 'react-native';
 import Header from './../../components/Header'
+import Icon from 'react-native-vector-icons/MaterialIcons'
 
 
 const Main = ({ navigation }) => (
@@ -18,7 +19,7 @@ const Main = ({ navigation }) => (
       <Text style={styles.dataset}>Eduardo Viana</Text>
       <Text style={styles.dataset}>UX Designer</Text>
       <TouchableOpacity activeOpacity={0.6} style={styles.button} onPress={() => navigation.navigate('User') }>
-      <Text>+</Text>
+      <Icon name="add" size={20} color="#adadad" />
       </TouchableOpacity>
     </View>
   </View>
