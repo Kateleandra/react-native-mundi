@@ -1,25 +1,20 @@
-import styled from 'styled-components/native';
+import styled from 'styled-components';
 
 export const Container = styled.View`
 
-align-items: center;
-padding: 40px 0 30px;
 `;
 
 export const Top = styled.View`
 
-align-items: center;
 `;
 
-export const Logo = styled.View`
+export const Logo = styled.Text`
 
-align-items: center;
 `;
 
 
-export const Title = styled.View`
+export const Title = styled.Text`
 
-align-items: center;
 `;
 
 
