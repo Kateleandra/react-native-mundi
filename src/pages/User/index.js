@@ -1,6 +1,5 @@
 import React from 'react';
 import { View, Text, StyleSheet, TouchableOpacity } from 'react-native';
-import Header from './../../components/Header'
 import Icon from 'react-native-vector-icons/MaterialIcons'
 
 import { Container, UserImg } from './styles';
@@ -12,7 +11,7 @@ const User = ({ navigation }) => (
 
     <View style={styles.container}>
       <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('Main') }>
-          <Icon style={styles.icon} name="keyboard_arrow_left" size={20} />
+          <Icon style={styles.icon} name="keyboardBackspace" size={20} />
       </TouchableOpacity>
       <View>
         <UserImg source={userImg} />
