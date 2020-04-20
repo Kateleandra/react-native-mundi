@@ -20,15 +20,13 @@ const Main = ({ navigation }) => (
 
     <View style={styles.card}>  
       <UserImg style={styles.userImg} source={userImg} />          
-
-        <View style={styles.dataset}>
-          <Text style={styles.name}>Eduardo Viana</Text>
-          <Text style={styles.profes}>UX Designer</Text>
-        </View>
-
-        <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('User') }>
-          <Icon style={styles.icon} name="add" size={20} />
-        </TouchableOpacity>
+      <View style={styles.dataset}>
+        <Text style={styles.name}>Eduardo Viana</Text>
+        <Text style={styles.profes}>UX Designer</Text>
+      </View>
+      <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('User') }>
+        <Icon style={styles.icon} name="add" size={20} />
+      </TouchableOpacity>
     </View>
   </View>
 );

@@ -2,7 +2,7 @@ import React from 'react';
 import { View, Text, StyleSheet, TouchableOpacity } from 'react-native';
 import Icon from 'react-native-vector-icons/MaterialIcons'
 
-import { Container, UserImg } from './styles';
+import { UserImg } from './styles';
 
 import userImg from '../../assets/user01.jpg'
 
@@ -11,10 +11,12 @@ const User = ({ navigation }) => (
 
     <View style={styles.container}>
       <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('Main') }>
-          <Icon style={styles.icon} name="keyboardBackspace" size={20} />
+          <Icon style={styles.icon} name="chevron-left" size={20} />
       </TouchableOpacity>
-      <View>
-        <UserImg source={userImg} />
+
+      <View style={styles.body}>
+      <UserImg style={styles.userImg} source={userImg} />          
+
         <View style={styles.dataset}>
           <Text style={styles.name}>Eduardo Viana</Text>
           <Text style={styles.profes}>UX Designer</Text>
@@ -31,9 +33,20 @@ export default User;
 
 const styles = StyleSheet.create({
 
+  userImg:{
+    borderRadius: 100,
+    width: 100,
+    height: 100,
+  },
+
     container:{
-        flex:1,
-        backgroundColor: '#01b5e8',
+    flex:1,
+    backgroundColor: '#01b5e8',
+    },
+
+    body:{
+      justifyContent: 'center',
+      alignItems: 'center',
     },
 
     title:{

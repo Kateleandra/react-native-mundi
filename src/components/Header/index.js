@@ -9,7 +9,6 @@ export default function Header(){
     return(
         <Container>
           <Top>
-            <Text>Kate</Text>
             <Logo source={logo} />
             <Title>
             </Title>
